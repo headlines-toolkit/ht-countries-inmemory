@@ -1,11 +1,11 @@
-// 
+//
 // ignore_for_file: lines_longer_than_80_chars
 
 import 'dart:async';
 import 'dart:collection'; // For UnmodifiableMapView
 
 import 'package:ht_countries_client/ht_countries_client.dart';
-import 'package:ht_countries_inmemory/src/data/countries.dart'; 
+import 'package:ht_countries_inmemory/src/data/countries.dart';
 
 /// {@template ht_countries_inmemory_client}
 /// An in-memory implementation of the [HtCountriesClient] interface.
@@ -53,7 +53,7 @@ class HtCountriesInMemoryClient implements HtCountriesClient {
   /// The duration to wait before executing operations.
   final Duration _simulatedDelay;
 
-  /// Provides read-only access to the internal countries map, 
+  /// Provides read-only access to the internal countries map,
   /// primarily for testing.
   Map<String, Country> get countries => UnmodifiableMapView(_countries);
 
